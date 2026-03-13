@@ -1,6 +1,6 @@
 # INFORME FINAL – SEGURIDAD DEL SISTEMA ERP
 ## 1. Introducción
-El presente informe documenta el análisis de seguridad realizado sobre el sistema ERP, así como las medidas aplicadas para mejorar el control de accesos, la monitorización del sistema y la gestión de copias de seguridad.
+#### El presente informe documenta el análisis de seguridad realizado sobre el sistema ERP, así como las medidas aplicadas para mejorar el control de accesos, la monitorización del sistema y la gestión de copias de seguridad.
 ---
 ## 2. Análisis inicial
 Se realizó una revisión del sistema para identificar posibles riesgos de seguridad.

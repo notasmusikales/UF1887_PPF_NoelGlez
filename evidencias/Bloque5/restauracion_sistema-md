@@ -1,6 +1,6 @@
 # BLOQUE 5 – RESTAURACIÓN DEL SISTEMA
 ## Objetivo
-### Simular la restauración del sistema ERP utilizando las copias de seguridad generadas previamente, verificando el funcionamiento del sistema y la integridad de los datos.
+#### Simular la restauración del sistema ERP utilizando las copias de seguridad generadas previamente, verificando el funcionamiento del sistema y la integridad de los datos.
 ---
 ## 1. Restauración de la base de datos
 #### Se utilizó el archivo de backup generado en el bloque anterior.
@@ -20,7 +20,7 @@ tar -xzvf backup_odoo_files.tar.gz
 Esto permite recuperar módulos y configuraciones del sistema.
 ---
 ## 3. Reinicio del sistema
-####Una vez restaurados los datos y archivos, se reinició el servicio del ERP.
+#### Una vez restaurados los datos y archivos, se reinició el servicio del ERP.
 ```
 docker start odoo18
 ```

@@ -1,0 +1,38 @@
+# BLOQUE 5 – RESTAURACIÓN DEL SISTEMA
+## Objetivo
+Simular la restauración del sistema ERP utilizando las copias de seguridad generadas previamente, verificando el funcionamiento del sistema y la integridad de los datos.
+---
+## 1. Restauración de la base de datos
+Se utilizó el archivo de backup generado en el bloque anterior.
+Comando utilizado:
+docker exec -i odoo18-db psql -U odoo odoo18 < backup_odoo18.sql
+Este procedimiento restaura la estructura y los datos de la base de datos del ERP.
+---
+## 2. Restauración de archivos del ERP
+Se restauraron los archivos del ERP mediante el archivo comprimido generado.
+Comando utilizado:
+tar -xzvf backup_odoo_files.tar.gz
+Esto permite recuperar módulos y configuraciones del sistema.
+---
+## 3. Reinicio del sistema
+Una vez restaurados los datos y archivos, se reinició el servicio del ERP.
+docker start odoo18
+---
+## 4. Verificación del funcionamiento
+Se accedió al sistema mediante navegador web.
+Se comprobó:
+- carga correcta del ERP
+- acceso al panel principal
+- disponibilidad de módulos
+---
+## 5. Verificación de integridad de datos
+Se revisaron registros de clientes, productos y otros datos del sistema.
+También se ejecutaron consultas en PostgreSQL para comprobar la existencia de registros.
+Los datos restaurados coinciden con la copia de seguridad generada.
+---
+## 6. Verificación de acceso de usuarios
+Se probaron accesos con distintos perfiles de usuario.
+Todos los usuarios pudieron acceder según sus permisos configurados.
+---
+## 7. Conclusión
+La restauración del sistema se realizó correctamente. El ERP funciona con normalidad, los datos se mantienen íntegros y los usuarios pueden acceder al sistema según sus permisos.
